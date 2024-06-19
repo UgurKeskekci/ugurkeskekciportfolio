@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.projects {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fdfdfd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects h2 {
+  font-size: 28px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.myProjects {
+  display: flex;
+  align-items: center;
+}
+
+.myProjects div {
+  margin: 10px;
+  
+}
+
+.myProjects img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.myProjects span {
+  color: blue;
+}
+
+.descriptionContainer{
+max-width: 400px;
+height: 400px;
+display: flex;
+flex-direction: column-reverse;
+text-align: center;
+justify-content: center;
+
+}
+
+@media (max-width: 900px) {
+  .myProjects {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .myProjects,
+  .image {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .myProjects h2 {
+    font-size: 24px;
+  }
+
+  .image img {
+    max-width: 300px;
+  }
+  .descriptionContainer {
+    width: 100%;
+  }
+  .myProjects div {
+    margin: 1px;
+  }
+}
