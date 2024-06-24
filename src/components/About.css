@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 .about {
   display: flex;
   align-items: center;
@@ -7,7 +9,6 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   flex-wrap: wrap;
   font-family: 'Poppins', sans-serif;
-
 }
 
 .content {
@@ -26,6 +27,7 @@
   font-size: 18px;
   line-height: 1.5;
   color: #333;
+  margin-bottom: 20px;
 }
 
 .image {
