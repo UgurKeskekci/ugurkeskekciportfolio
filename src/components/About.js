@@ -8,7 +8,7 @@ const About = () => {
       <div className="content">
         <h2>About Me</h2>
         <p>
-          Hello, I'm Uğur, a passionate Frontend Developer. I graduated from
+          Hello, I'm Uğur, a Frontend Developer. I graduated from
           Bilkent University with a degree in Computer Technology and
           Information Systems (CTIS). I am fluent in English and currently
           specialize in developing software using React and React Native. I

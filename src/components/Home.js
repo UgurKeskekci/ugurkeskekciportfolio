@@ -9,8 +9,8 @@ const Home = () => {
       <div className="hero">
         
        <div className='infoSection'> 
-        <h2>Front-End React Developer 👋</h2>
-        <p>Hi, I'm Uğur Keşkekçi. A passionate Front-end React Developer based in Turkey. 📍</p>
+        <h2>Front-End Developer.</h2>
+        <p>Hi, I'm Uğur Keşkekçi. I develop user interfaces using modern front-end web technologies based in Turkey. 📍</p>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/u%C4%9Fur-ke%C5%9Fkekci-3518001a2/"><TbBrandLinkedin />
 </a>
