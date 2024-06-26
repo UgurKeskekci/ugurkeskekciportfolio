@@ -7,6 +7,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 50px;
   font-family: "Poppins", sans-serif;
+
 }
 
 .projects h2 {
@@ -17,59 +18,71 @@
 
 .myProjects {
   display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.myProjects div {
-  margin: 10px;
-  
+.project {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  max-width: 900px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
 }
 
-.myProjects img {
+.project.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project.reverse {
+  flex-direction: row-reverse;
+}
+
+.description{
+  max-width: 400px;
+}
+.description, .image {
+  flex: 1;
+  margin: 10px;
+}
+
+.image img {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.epicekImage{
+  height: 300px;
+  max-width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-.myProjects span {
+.description p {
+  font-size: 16px;
+  color: #555;
+}
+
+.description span {
   color: blue;
 }
 
-.descriptionContainer{
-max-width: 400px;
-height: 400px;
-display: flex;
-flex-direction: column-reverse;
-text-align: center;
-justify-content: center;
-
-}
-
 @media (max-width: 900px) {
-  .myProjects {
-    display: flex;
+  .project {
     flex-direction: column;
-    padding: 20px 10px;
+    align-items: center;
   }
 
-  .myProjects,
-  .image {
-    max-width: 100%;
-    padding: 10px;
-  }
-
-  .myProjects h2 {
-    font-size: 24px;
+  .project.reverse {
+    flex-direction: column;
   }
 
   .image img {
-    max-width: 300px;
-  }
-  .descriptionContainer {
-    width: 100%;
-  }
-  .myProjects div {
-    margin: 1px;
+    max-width: 100%;
   }
 }
